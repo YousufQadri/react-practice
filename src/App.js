@@ -1,9 +1,18 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component, Fragment } from "react";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Body from "./components/Body/Body";
+import "./App.css";
 
 class App extends Component {
   render() {
-    return <h1>Hello World</h1>
+    return (
+      <Fragment>
+        <Header />
+        <Body />
+        <Footer />
+      </Fragment>
+    );
   }
 }
 
