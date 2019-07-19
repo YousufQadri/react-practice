@@ -1,13 +1,15 @@
 import React from "react";
-import "./Body.css";
+import Home from "../routes/Home/Home";
+import About from "../routes/About/About";
+import Contact from "../routes/Contact/Contact";
 
-function Body() {
-  return (
-    <div>
-      <div>
-        <p />
-      </div>
-    </div>
+function Body(props) {
+  return props.st === "about" ? (
+    <About />
+  ) : props.st === "contact" ? (
+    <Contact />
+  ) : (
+    <Home />
   );
 }
 

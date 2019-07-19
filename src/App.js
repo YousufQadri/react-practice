@@ -5,11 +5,21 @@ import Body from "./components/Body/Body";
 import "./App.css";
 
 class App extends Component {
+  state = {
+    pageVisited: "home"
+  };
+
+  changeState = e => {
+    e.preventDefault();
+    const route = e.target.text.toLowerCase();
+    this.setState({ pageVisited: route });
+  };
+
   render() {
     return (
       <Fragment>
-        <Header />
-        <Body />
+        <Header checkState={this.changeState} />
+        <Body st={this.state.pageVisited} />
         <Footer />
       </Fragment>
     );
