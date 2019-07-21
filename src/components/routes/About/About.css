@@ -1,10 +1,65 @@
-.About-bg {
-  padding: 2rem 1rem;
-  margin-bottom: 2rem;
-  border-radius: 0.3rem;
-  background-image: url(../../../../src/imgs/creative.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.pimg1,
+.pimg2 {
+  position: relative;
+  height: 100%;
+  opacity: 0.7;
   background-position: center;
-  height: 1000px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.pimg1 {
+  background-image: url("../../../../src/imgs/creative.jpg");
+  min-height: 100vh;
+}
+
+.pimg2 {
+  background-image: url("../../../imgs/2.jpg");
+  min-height: 400px;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+  height: 60%;
+}
+
+.section p {
+  font-size: 1.7em;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black !important;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.ptext .border.trans {
+  background-color: transparent;
+}
+
+section img {
+  width: 300px;
 }

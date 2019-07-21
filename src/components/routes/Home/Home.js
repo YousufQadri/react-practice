@@ -2,7 +2,7 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="jumbotron">
+    <div className="container">
       <h1 className="display-4">Hello, Users!</h1>
       <p className="lead">Simple React app... Styled by using bootstrap</p>
       <hr className="my-4" />
