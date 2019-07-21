@@ -3,9 +3,9 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div className="navbar fixed-bottom justify-content-center bg-secondary text-white">
-      <h1>All copyrights to Yousuf &copy;</h1>
-    </div>
+    <footer className="text-center bg-secondary text-white">
+      <h5 className="pt-2">All Rights Reserved &copy; 2019</h5>
+    </footer>
   );
 }
 
