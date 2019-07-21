@@ -8,14 +8,14 @@ function About() {
     <Fragment className="container">
       <div className="pimg1">
         <div className="ptext">
-          <span className="display-4 border font-weight-bold">
+          <span className="About-mainHead border font-weight-bold">
             Creativity is what IT matters
           </span>
         </div>
       </div>
 
       <section className="section section-dark">
-        <h2 className="display-4 font-weight-bold py-5">Our Story</h2>
+        <h2 className="display-5 font-weight-bold py-5">Our Story</h2>
         <p className="pb-3">
           Our journey started when graduates met together, while working in
           Silicon Valley, and decided to set the groundwork for a world-class
@@ -48,7 +48,7 @@ function About() {
       </div>
 
       <section className="section section-light">
-        <h2 className="display-4 font-weight-bold py-4">Our Creativity Hubs</h2>
+        <h2 className="display-5 font-weight-bold py-4">Our Creativity Hubs</h2>
         <div className="row">
           <div className="col mb-4">
             <img src={building1} alt="user" className="rounded" />

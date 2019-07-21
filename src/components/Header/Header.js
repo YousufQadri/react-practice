@@ -1,5 +1,4 @@
 import React from "react";
-import "./Header.css";
 
 function Header(props) {
   return (
@@ -9,7 +8,7 @@ function Header(props) {
           <h3>CreativO</h3>
         </div>
 
-        <ul className="nav justify-content-end">
+        <ul className="nav justify-content-end text-white">
           <li className="nav-item">
             <a className="nav-link" href="#" onClick={props.changeState}>
               Home

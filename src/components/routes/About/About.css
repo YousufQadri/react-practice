@@ -26,7 +26,11 @@
 }
 
 .section p {
-  font-size: 1.7em;
+  font-size: 1.5em;
+}
+
+.About-mainHead {
+  font-size: 2.7rem;
 }
 
 .section-light {
