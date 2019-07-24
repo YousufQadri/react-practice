@@ -1,6 +1,7 @@
 import React from "react";
 
 function Header(props) {
+  const nav = ["Home", "About", "Contact"];
   return (
     <header>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-3">
@@ -9,21 +10,13 @@ function Header(props) {
         </div>
 
         <ul className="nav justify-content-end text-white">
-          <li className="nav-item">
-            <a className="nav-link" href="#" onClick={props.changeState}>
-              Home
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#" onClick={props.changeState}>
-              About
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#" onClick={props.changeState}>
-              Contact
-            </a>
-          </li>
+          {nav.map((item, index) => (
+            <li key={index} className="nav-item">
+              <a className="nav-link" href="#" onClick={props.changeState}>
+                {item}
+              </a>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
