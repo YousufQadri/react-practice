@@ -3,8 +3,8 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer className="text-center bg-secondary text-white">
-      <h5 className="pt-2">All Rights Reserved &copy; 2019</h5>
+    <footer className="Footer-container">
+      All Rights Reserved &copy; 2019
     </footer>
   );
 }

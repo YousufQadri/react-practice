@@ -6,7 +6,7 @@ import "./App.css";
 
 class App extends Component {
   state = {
-    pageVisited: ""
+    pageVisited: "home"
   };
 
   changeState = e => {
@@ -20,7 +20,9 @@ class App extends Component {
       <Fragment>
         <Header changeState={this.changeState} />
         <Body st={this.state.pageVisited} />
-        <Footer />
+        <div style={{ position: "relative" }}>
+          <Footer />
+        </div>
       </Fragment>
     );
   }
